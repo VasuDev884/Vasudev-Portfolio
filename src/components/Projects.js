@@ -2,6 +2,11 @@ import React, { useState } from 'react';
 import styled from 'styled-components';
 import { motion } from 'framer-motion';
 import { FaGithub, FaExternalLinkAlt } from 'react-icons/fa';
+import youtube from '../assests/projects/youtube.png';
+import ecommers from '../assests/projects/ecommer.png';
+import erp from '../assests/projects/ERP.jpeg';
+import academy from '../assests/projects/coursi .png';
+
 
 const ProjectsSection = styled.section`
   padding: 6rem 0;
@@ -150,7 +155,7 @@ const Projects = () => {
       id: 1,
       title: 'School ERP System',
       description: 'Transformed a PHP-based ERP system to React.js, resulting in 30% faster load times. Implemented modules for teachers, students, and parents with features like timetable management, homework tracking, and fee payment.',
-      image: 'erp.jpg',
+      image: `${erp}`,
       gradient: 'linear-gradient(45deg, #4361EE, #4CC9F0)',
       tech: ['React.js', 'TypeScript', 'Node.js', 'MongoDB'],
       category: 'web',
@@ -161,34 +166,34 @@ const Projects = () => {
       id: 2,
       title: 'Coursi Academy Website',
       description: 'Built a user-friendly website for Coursi Academy using HTML, Tailwind CSS, and JavaScript. Features include course details pages, Excel data storage for form submissions, demo booking, enrollment, and course reviews.',
-      image: 'academy.jpg',
+      image: `${academy}`,
       gradient: 'linear-gradient(45deg, #3F37C9, #4361EE)',
       tech: ['HTML', 'Tailwind CSS', 'JavaScript', 'Excel Integration'],
       category: 'web',
       github: '#',
-      live: '#'
+      live: 'https://www.coursi.in/'
     },
     {
       id: 3,
-      title: 'E-commerce Dashboard',
+      title: 'E-commerce',
       description: 'Developed a comprehensive dashboard for e-commerce business with analytics, inventory management, and order tracking. Implemented real-time data visualization and responsive design for seamless mobile access.',
-      image: 'dashboard.jpg',
+      image: `${ecommers}`,
       gradient: 'linear-gradient(45deg, #4CC9F0, #4895EF)',
       tech: ['React.js', 'Redux', 'Node.js', 'Chart.js'],
       category: 'dashboard',
-      github: '#',
-      live: '#'
+      github: 'https://github.com/VasuDev884/E-commerce.git',
+      live: 'https://ecommers-mern.vercel.app/'
     },
     {
       id: 4,
-      title: 'Task Management App',
-      description: 'Created a task management application with features like task categorization, priority setting, deadlines, and team collaboration. Implemented drag-and-drop functionality and real-time updates.',
-      image: 'task.jpg',
+      title: 'YouTube Clone',
+      description: 'I built a YouTube clone using the YouTube API that allows users to browse and filter videos by categories such as Trending, Music, Movies, Gaming, News, and Sports. Users can watch videos directly within the app and view comments for each video, providing a seamless and familiar YouTube-like experience.',
+      image: `${youtube}`,
       gradient: 'linear-gradient(45deg, #7209B7, #4361EE)',
       tech: ['React.js', 'Node.js', 'MongoDB', 'Socket.io'],
       category: 'app',
-      github: '#',
-      live: '#'
+      github: 'https://github.com/abhimanyuspark/youtube.git',
+      live: 'https://youtube-rose-one.vercel.app/'
     }
   ];
   
@@ -235,7 +240,7 @@ const Projects = () => {
             transition={{ type: "spring", stiffness: 300 }}
           >
             <ProjectImage gradient={project.gradient}>
-              {project.title.charAt(0)}
+              <img src={project.image} alt={project.title} style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
             </ProjectImage>
             <ProjectContent>
               <ProjectTitle>{project.title}</ProjectTitle>
