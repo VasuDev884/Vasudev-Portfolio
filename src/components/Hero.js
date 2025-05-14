@@ -369,7 +369,7 @@ const Hero = () => {
           </motion.div>
           <SocialIcons>
             <SocialIcon
-              href="https://github.com/"
+              href="https://github.com/VasuDev884"
               target="_blank"
               whileHover={{ scale: 1.1 }}
               whileTap={{ scale: 0.9 }}
