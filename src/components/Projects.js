@@ -157,7 +157,7 @@ const Projects = () => {
       description: 'Transformed a PHP-based ERP system to React.js, resulting in 30% faster load times. Implemented modules for teachers, students, and parents with features like timetable management, homework tracking, and fee payment.',
       image: `${erp}`,
       gradient: 'linear-gradient(45deg, #4361EE, #4CC9F0)',
-      tech: ['React.js', 'TypeScript', 'Node.js', 'MongoDB'],
+      tech: ['React.js', 'TypeScript', 'styled-components'],
       category: 'web',
       github: '#',
       live: '#'
@@ -179,7 +179,7 @@ const Projects = () => {
       description: 'Developed a comprehensive dashboard for e-commerce business with analytics, inventory management, and order tracking. Implemented real-time data visualization and responsive design for seamless mobile access.',
       image: `${ecommers}`,
       gradient: 'linear-gradient(45deg, #4CC9F0, #4895EF)',
-      tech: ['React.js', 'Redux', 'Node.js', 'Chart.js'],
+      tech: ['React.js', 'Redux', 'Node.js', 'MongoDB' , 'Express.js' , 'styled-components'],
       category: 'dashboard',
       github: 'https://github.com/VasuDev884/E-commerce.git',
       live: 'https://ecommers-mern.vercel.app/'
@@ -190,7 +190,7 @@ const Projects = () => {
       description: 'I built a YouTube clone using the YouTube API that allows users to browse and filter videos by categories such as Trending, Music, Movies, Gaming, News, and Sports. Users can watch videos directly within the app and view comments for each video, providing a seamless and familiar YouTube-like experience.',
       image: `${youtube}`,
       gradient: 'linear-gradient(45deg, #7209B7, #4361EE)',
-      tech: ['React.js', 'Node.js', 'MongoDB', 'Socket.io'],
+      tech: ['React.js', 'redux', 'YouTube API', 'tailwind CSS'],
       category: 'app',
       github: 'https://github.com/abhimanyuspark/youtube.git',
       live: 'https://youtube-rose-one.vercel.app/'
